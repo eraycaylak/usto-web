@@ -55,6 +55,7 @@ h1,h2,h3,h4 { font-family: var(--font-head); font-weight: 700; line-height: 1.08
 .site-header.solid .brand { color: var(--color-text); }
 .brand .logo { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: #fff;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); box-shadow: 0 4px 12px rgba(37,99,235,.35); }
+.brand .logo-img { width: 34px; height: 34px; border-radius: 9px; display: block; }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a { font-size: .94rem; font-weight: 500; color: rgba(255,255,255,.82); transition: color .3s; }
 .site-header.solid .nav-links a { color: var(--color-subtext); }
