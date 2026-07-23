@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2563EB" />
+  <title>USTO — Boş zamanını gelire dönüştür</title>
+  <meta name="description" content="USTO, boş zamanlarında ek iş yapmak isteyen ustalar ile hizmete ihtiyacı olan müşterileri güvenle buluşturur. Boya & badana, elektrik, mobilya montajı." />
+  <link rel="canonical" href="https://usto.app/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="USTO" />
+  <meta property="og:title" content="USTO — Boş zamanını gelire dönüştür" />
+  <meta property="og:description" content="Emekle güveni buluşturuyoruz. Ustalar için ek gelir, müşteriler için güvenli hizmet." />
+  <meta property="og:url" content="https://usto.app/" />
+  <meta property="og:image" content="https://usto.app/assets/og.png" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+
+  <!-- Fonts: preconnect + swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+
+  <!-- SEO: Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "USTO",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "LifestyleApplication",
+    "description": "Boş zamanlarında ek iş yapmak isteyen ustalar ile hizmete ihtiyacı olan müşterileri güvenle buluşturan hizmet pazar yeri.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+    "inLanguage": "tr-TR"
+  }
+  </script>
+  <script>
+    // FOUC-önleyen tema (kayıtlı tercih)
+    (function(){ try { var t = localStorage.getItem('usto-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch(e){} })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="btn" style="position:absolute;left:-9999px;top:0" onfocus="this.style.left='16px';this.style.top='16px';this.style.zIndex='100'">İçeriğe geç</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="USTO ana sayfa">
+        <span class="logo" aria-hidden="true">U</span> USTO
+      </a>
+      <nav class="nav-links" aria-label="Ana menü">
+        <a href="#nasil">Nasıl çalışır</a>
+        <a href="#ustalar">Ustalar için</a>
+        <a href="#musteriler">Müşteriler için</a>
+        <a href="#sss">SSS</a>
+      </nav>
+      <div class="nav-cta">
+        <button id="theme-btn" class="btn btn-ghost" aria-label="Tema değiştir" title="Tema">🌙</button>
+        <a href="#indir" class="btn btn-primary">Uygulamayı indir</a>
+        <button class="menu-toggle" id="menu-btn" aria-label="Menü" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">✦ Emekle güveni buluşturuyoruz</span>
+          <h1>Boş zamanını <span class="accent">gelire dönüştür.</span></h1>
+          <p class="lead">Gündüz işin var, akşam ustalığın. USTO; boya, elektrik ve montaj ustalarını yakınlarındaki işlerle güvenle buluşturur. Müşteriler için şeffaf teklif, ustalar için ek gelir.</p>
+          <div class="cats" aria-label="Kategoriler">
+            <span class="cat-chip"><span class="cat-dot" style="background:var(--cat-boya)"></span> Boya &amp; Badana</span>
+            <span class="cat-chip"><span class="cat-dot" style="background:var(--cat-elektrik)"></span> Elektrik</span>
+            <span class="cat-chip"><span class="cat-dot" style="background:var(--cat-montaj)"></span> Mobilya Montajı</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#indir" class="btn btn-primary btn-lg">Hemen başla</a>
+            <a href="#nasil" class="btn btn-ghost btn-lg">Nasıl çalışır?</a>
+          </div>
+          <div class="hero-trust">
+            <div class="stat"><b>3</b><span>hizmet kategorisi</span></div>
+            <div class="stat"><b>&lt; 2 sa</b><span>ilk teklif süresi</span></div>
+            <div class="stat"><b>4.8★</b><span>ortalama memnuniyet</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="phone" role="img" aria-label="USTO uygulama önizlemesi">
+            <span class="phone-notch"></span>
+            <div class="phone-screen">
+              <div class="pm-brand">
+                <span class="mark">U</span>
+                <strong style="font-family:var(--font-head);font-size:1.4rem">USTO</strong>
+                <span style="opacity:.8;font-size:.85rem">Yakındaki ustalar</span>
+              </div>
+              <div class="pm-cards">
+                <div class="pm-card">
+                  <span class="pm-avatar"></span>
+                  <span class="col"><span class="name">Mehmet U.</span><span class="meta">Boya Ustası · 4.9 (128) · 1.2 km</span></span>
+                  <span class="pm-price">₺3.500</span>
+                </div>
+                <div class="pm-card">
+                  <span class="pm-avatar"></span>
+                  <span class="col"><span class="name">Ahmet Y.</span><span class="meta">Elektrik Ustası · 4.8 (96) · 2.1 km</span></span>
+                  <span class="pm-price">₺3.750</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NASIL ÇALIŞIR -->
+    <section id="nasil" class="section">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="eyebrow">Nasıl çalışır</span>
+          <h2>Üç adımda işini hallet</h2>
+          <p>İlan ver, teklifleri karşılaştır, ustanı seç. Hepsi tek uygulamada.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal"><div class="n">1</div><h3>İlanını oluştur</h3><p>Kategoriyi seç, fotoğraf ekle, konum ve bütçeni belirt. 60 saniyede yayında.</p></article>
+          <article class="step reveal"><div class="n">2</div><h3>Teklifleri karşılaştır</h3><p>Yakındaki ustalardan gelen teklifleri fiyat, puan ve mesafeye göre kıyasla.</p></article>
+          <article class="step reveal"><div class="n">3</div><h3>Ustanı seç, sohbet et</h3><p>Doğrudan mesajlaş, işi planla, tamamlanınca puanla. Güven puanla büyür.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- USTALAR / MÜŞTERİLER -->
+    <section class="section">
+      <div class="container split">
+        <div class="panel craft reveal" id="ustalar">
+          <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#fff">Ustalar için</span>
+          <h3>Boş zamanın kazanca dönsün</h3>
+          <ul>
+            <li>Yakınındaki işleri gör, dilediğine teklif ver</li>
+            <li>Zaman, konum ve kategoriye göre filtrele</li>
+            <li>İtibarını puan ve tamamlanan işlerle büyüt</li>
+            <li>Takvimini ve uygunluğunu sen yönet</li>
+          </ul>
+          <a href="#indir" class="btn">Usta olarak kaydol →</a>
+        </div>
+        <div class="panel cust reveal" id="musteriler">
+          <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#fff">Müşteriler için</span>
+          <h3>Güvenilir ustayı hızla bul</h3>
+          <ul>
+            <li>Tek ilanla birden çok teklif al</li>
+            <li>Onaylı ustalar, gerçek yorumlar</li>
+            <li>Şeffaf fiyat, gizli sürpriz yok</li>
+            <li>Uygulama içi sohbetle güvende kal</li>
+          </ul>
+          <a href="#indir" class="btn">Ücretsiz ilan ver →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÖZELLİKLER -->
+    <section class="section">
+      <div class="container">
+        <div class="head center reveal">
+          <span class="eyebrow">Neden USTO</span>
+          <h2>Güven için tasarlandı</h2>
+        </div>
+        <div class="features">
+          <div class="feature reveal"><div class="ico">🛡️</div><h4>Onaylı kimlik</h4><p>Kimlik doğrulamalı ustalar, güven rozeti.</p></div>
+          <div class="feature reveal"><div class="ico">💬</div><h4>Anlık sohbet</h4><p>Fotoğraf, konum ve okundu bilgisiyle net iletişim.</p></div>
+          <div class="feature reveal"><div class="ico">⭐</div><h4>Gerçek puanlar</h4><p>Tamamlanan işe dayalı çift yönlü değerlendirme.</p></div>
+          <div class="feature reveal"><div class="ico">📍</div><h4>Yakınında</h4><p>Konumuna en yakın ustaları haritada gör.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SSS -->
+    <section id="sss" class="section">
+      <div class="container">
+        <div class="head center reveal"><span class="eyebrow">SSS</span><h2>Sık sorulan sorular</h2></div>
+        <div class="faq">
+          <details class="faq-item"><summary class="faq-q">USTO kullanmak ücretli mi?<span class="chev">⌄</span></summary><div class="faq-a">Hayır. İlan vermek ve teklif almak ücretsizdir. İleride öne çıkarma gibi opsiyonel özellikler eklenebilir.</div></details>
+          <details class="faq-item"><summary class="faq-q">Usta olarak nasıl kaydolurum?<span class="chev">⌄</span></summary><div class="faq-a">Telefonunla giriş yap, "Usta" rolünü seç, uzmanlık kategorilerini ve çalışma bölgeni belirle. İsteğe bağlı kimlik doğrulamayla "Onaylı" rozeti kazan.</div></details>
+          <details class="faq-item"><summary class="faq-q">Ödeme uygulama üzerinden mi?<span class="chev">⌄</span></summary><div class="faq-a">İlk sürümde ödeme uygulama dışında yapılır; güvenli ödeme altyapısı yakında geliyor.</div></details>
+          <details class="faq-item"><summary class="faq-q">Hangi şehirlerde aktif?<span class="chev">⌄</span></summary><div class="faq-a">Pilot bölgede başlıyor, hızla yayılıyoruz. Uygulamada bölgeni görebilirsin.</div></details>
+          <details class="faq-item"><summary class="faq-q">Verilerim güvende mi?<span class="chev">⌄</span></summary><div class="faq-a">KVKK'ya uygun çalışır, verilerini şifreli saklarız ve dilediğinde hesabını silebilirsin.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- İNDİR / CTA -->
+    <section id="indir" class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Boş zamanını gelire dönüştürmeye hazır mısın?</h2>
+          <p>USTO'yu indir; ister usta ol, ister güvenilir usta bul. Emekle güveni buluşturuyoruz.</p>
+          <div class="store-badges">
+            <a class="store" href="#" aria-label="App Store'dan indir"> App Store</a>
+            <a class="store" href="#" aria-label="Google Play'den indir">▶ Google Play</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/"><span class="logo" aria-hidden="true">U</span> USTO</a>
+          <p class="muted" style="margin-top:12px;max-width:32ch">Boş zamanını gelire dönüştür. Emekle güveni buluşturuyoruz.</p>
+        </div>
+        <div><h5>Ürün</h5><a href="#nasil">Nasıl çalışır</a><a href="#ustalar">Ustalar için</a><a href="#musteriler">Müşteriler için</a><a href="#sss">SSS</a></div>
+        <div><h5>Şirket</h5><a href="#">Hakkımızda</a><a href="#">İletişim</a><a href="#">Blog</a><a href="#">Kariyer</a></div>
+        <div><h5>Yasal</h5><a href="legal/privacy.html">Gizlilik</a><a href="legal/terms.html">Kullanım Şartları</a><a href="legal/kvkk.html">KVKK</a><a href="legal/cookie.html">Çerez Politikası</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 USTO. Tüm hakları saklıdır.</span>
+        <span>Türkiye'de sevgiyle yapıldı ♥</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
