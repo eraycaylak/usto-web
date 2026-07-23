@@ -3,7 +3,7 @@
 //  • Gezinme/HTML  → NETWORK-FIRST (bayat sayfa servis etmeyi önler), çevrimdışıysa cache
 //  • Statik varlık → stale-while-revalidate
 //  • /app/ (Flutter web) → HİÇ dokunma; kendi service worker'ı var, çakışmasın
-var CACHE = 'usto-v6';
+var CACHE = 'usto-v7';
 var ASSETS = [
   './', './index.html',
   './styles/tokens.css', './styles/site.css', './scripts/site.js',
