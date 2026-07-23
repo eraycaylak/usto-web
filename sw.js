@@ -1,5 +1,5 @@
 // USTO — basit PWA service worker (cache-first statik kabuk)
-var CACHE = 'usto-v3';
+var CACHE = 'usto-v5';
 // Göreli yollar — hem kök alanda hem GitHub Pages alt-yolunda (/usto-web/) çalışır.
 var ASSETS = [
   './', './index.html',

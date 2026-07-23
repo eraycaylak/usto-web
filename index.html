@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="tr" data-theme="">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#2563EB" />
-  <title>USTO — Boş zamanını gelire dönüştür</title>
-  <meta name="description" content="USTO, boş zamanlarında ek iş yapmak isteyen ustalar ile hizmete ihtiyacı olan müşterileri güvenle buluşturur. Boya & badana, elektrik, mobilya montajı." />
+  <meta name="theme-color" content="#FFFFFF" />
+  <title>USTO — İşini ustasına bırak.</title>
+  <meta name="description" content="Güvenilir ustalarla dakikalar içinde buluş. Boya, elektrik, mobilya montajı. Kimlik doğrulamalı ustalar, şeffaf teklifler, gerçek puanlar." />
   <link rel="canonical" href="https://eraycaylak.github.io/usto-web/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="USTO" />
-  <meta property="og:title" content="USTO — Boş zamanını gelire dönüştür" />
-  <meta property="og:description" content="Emekle güveni buluşturuyoruz. Ustalar için ek gelir, müşteriler için güvenli hizmet." />
+  <meta property="og:title" content="USTO — İşini ustasına bırak." />
+  <meta property="og:description" content="Güvenilir ustalarla dakikalar içinde buluş." />
   <meta property="og:url" content="https://eraycaylak.github.io/usto-web/" />
   <meta property="og:image" content="https://eraycaylak.github.io/usto-web/assets/img/trust.jpg" />
   <meta property="og:locale" content="tr_TR" />
@@ -25,211 +25,300 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="assets/img/hero-paint.jpg" fetchpriority="high" />
 
-  <link rel="stylesheet" href="styles/tokens.css" />
-  <link rel="stylesheet" href="styles/site.css" />
+  <link rel="stylesheet" href="styles/tokens.css?v=3" />
+  <link rel="stylesheet" href="styles/site.css?v=3" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "USTO",
-    "operatingSystem": "iOS, Android, Web",
-    "applicationCategory": "LifestyleApplication",
-    "description": "Boş zamanlarında ek iş yapmak isteyen ustalar ile hizmete ihtiyacı olan müşterileri güvenle buluşturan hizmet pazar yeri.",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
-    "inLanguage": "tr-TR"
-  }
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"USTO","operatingSystem":"iOS, Android, Web","applicationCategory":"LifestyleApplication","description":"Güvenilir ustalarla dakikalar içinde buluşturan hizmet platformu.","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},"inLanguage":"tr-TR"}
   </script>
-  <script>(function(){try{var t=localStorage.getItem('usto-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 <body>
-  <div class="progress-bar" id="progress" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
-  <header class="site-header" id="header">
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="USTO"><img class="logo-img" src="assets/img/usto-icon.png" alt="" width="34" height="34" /> USTO</a>
-      <nav class="nav-links" aria-label="Menü">
-        <a href="#nasil">Nasıl çalışır</a>
-        <a href="#kategoriler">Hizmetler</a>
-        <a href="#guven">Güven</a>
-      </nav>
-      <div class="nav-cta">
-        <button id="theme-btn" class="icon-btn" aria-label="Tema" title="Tema">🌙</button>
-        <a href="app/" class="btn btn-primary sm">Hemen başla</a>
-      </div>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img src="assets/img/usto-icon.png" alt="" width="32" height="32" /><span>USTO</span></a>
+    <nav class="nav-links" aria-label="Menü">
+      <a href="#nasil">Nasıl çalışır</a>
+      <a href="#guven">Güven</a>
+      <a href="#ustalar">Ustalar için</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <div class="nav-act">
+      <a href="app/" class="btn ghost sm">Giriş yap</a>
+      <a href="app/" class="btn primary sm">Uygulamayı aç</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="top">
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="hero">
-      <div class="hero-media" data-parallax="0.25">
-        <img src="assets/img/hero-paint.jpg" alt="Boya ustası aydınlık bir dairede duvar boyuyor" />
-        <div class="hero-scrim"></div>
-      </div>
-      <div class="wrap hero-inner">
-        <span class="eyebrow light">✦ Emekle güveni buluşturuyoruz</span>
-        <h1 class="hero-title">
-          <span class="line"><span>Boş zamanını</span></span>
-          <span class="line"><span class="accent">gelire dönüştür.</span></span>
+<main id="top">
+
+  <!-- ════════════ HERO ════════════ -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <span class="pill"><span class="dot"></span> Kimlik doğrulamalı ustalar</span>
+        <h1 class="hero-h1">
+          <span class="l"><span>İşini</span></span>
+          <span class="l"><span>ustasına</span></span>
+          <span class="l"><span class="grad">bırak.</span></span>
         </h1>
-        <p class="hero-lead">Gündüz işin var, akşam ustalığın. USTO; boya, elektrik ve montaj ustalarını yakınlarındaki işlerle güvenle buluşturur.</p>
-        <div class="hero-actions">
-          <a href="app/" class="btn btn-primary lg">Hemen başla →</a>
-          <a href="#nasil" class="btn btn-glass lg">Nasıl çalışır</a>
+        <p class="hero-lead">Güvenilir ustalarla dakikalar içinde buluş. İşini anlat, teklifleri karşılaştır, en uygun ustayı seç.</p>
+        <div class="hero-cta">
+          <a href="app/" class="btn primary lg">Ücretsiz başla</a>
+          <a href="#nasil" class="btn ghost lg">Nasıl çalışır</a>
+        </div>
+        <div class="social">
+          <div class="faces">
+            <img src="assets/img/av1.jpg" alt="" /><img src="assets/img/av2.jpg" alt="" /><img src="assets/img/av3.jpg" alt="" /><img src="assets/img/av-customer.jpg" alt="" />
+          </div>
+          <div class="social-t"><strong>4,8 / 5</strong><span>binlerce tamamlanan iş</span></div>
         </div>
       </div>
-      <a href="#nasil" class="scroll-cue" aria-label="Aşağı kaydır"><span></span></a>
-    </section>
 
-    <!-- ============ INTRO — sticky portre ============ -->
-    <section class="intro" id="intro">
-      <div class="wrap intro-grid">
-        <div class="intro-sticky">
-          <div class="portrait" data-parallax="0.12">
-            <img src="assets/img/usta-portrait.jpg" alt="Elinde telefonuyla gülümseyen bir usta" />
-            <div class="portrait-badge">
-              <strong>₺3.500</strong><span>akşam işi · 1 günde</span>
+      <div class="hero-stage">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="phone" id="heroPhone">
+          <div class="screen">
+            <div class="sbar"><span>9:41</span><span class="sb-r"><i></i><i></i><i></i></span></div>
+            <div class="app">
+              <div class="app-hi">Merhaba 👋<b>Bugün ne yaptıralım?</b></div>
+              <div class="app-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Boya, elektrik, montaj ara…</span></div>
+              <div class="app-lbl">Kategoriler</div>
+              <div class="app-cats">
+                <div class="cat" style="--c:var(--cat-boya);--cb:var(--cat-boya-bg)"><span class="ci"></span>Boya &amp; Badana<em>124 usta</em></div>
+                <div class="cat" style="--c:var(--cat-elektrik);--cb:var(--cat-elektrik-bg)"><span class="ci"></span>Elektrik<em>98 usta</em></div>
+                <div class="cat" style="--c:var(--cat-montaj);--cb:var(--cat-montaj-bg)"><span class="ci"></span>Montaj<em>86 usta</em></div>
+              </div>
+              <div class="app-lbl">Yakındaki ustalar</div>
+              <div class="app-row"><img src="assets/img/av1.jpg" alt="" /><span><b>Mehmet U.</b><em>Boya Ustası · 1,2 km</em></span><span class="rate">★ 4,9</span></div>
+              <div class="app-row"><img src="assets/img/av2.jpg" alt="" /><span><b>Ahmet Y.</b><em>Elektrik Ustası · 2,1 km</em></span><span class="rate">★ 4,8</span></div>
+              <div class="app-row"><img src="assets/img/av3.jpg" alt="" /><span><b>Emre K.</b><em>Montaj Ustası · 1,8 km</em></span><span class="rate">★ 4,7</span></div>
+            </div>
+            <div class="tabbar"><i class="on"></i><i></i><span class="fab">+</span><i></i><i></i></div>
+          </div>
+        </div>
+
+        <div class="float f1" data-f="0.5">
+          <span class="fi ok">✓</span><span><b>Kimlik doğrulandı</b><em>Onaylı usta</em></span>
+        </div>
+        <div class="float f2" data-f="-0.4">
+          <span class="fi bl">₺</span><span><b>3 yeni teklif</b><em>ortalama ₺3.400</em></span>
+        </div>
+        <div class="float f3" data-f="0.7">
+          <span class="fi st">★</span><span><b>4,9 puan</b><em>128 değerlendirme</em></span>
+        </div>
+      </div>
+    </div>
+    <a class="cue" href="#stats" aria-label="Aşağı"><span></span></a>
+  </section>
+
+  <!-- ════════════ STATS ════════════ -->
+  <section class="stats" id="stats">
+    <div class="wrap stats-in">
+      <div class="stat" data-r><b data-count="25000" data-suffix="+">0</b><span>Aktif kullanıcı</span></div>
+      <div class="stat" data-r><b data-count="15000" data-suffix="+">0</b><span>Tamamlanan iş</span></div>
+      <div class="stat" data-r><b data-count="4.8" data-dec="1" data-suffix=" / 5">0</b><span>Ortalama puan</span></div>
+      <div class="stat" data-r><b data-count="100" data-suffix="%">0</b><span>Güvenli hizmet</span></div>
+    </div>
+  </section>
+
+  <!-- ════════════ NASIL ÇALIŞIR ════════════ -->
+  <section class="how" id="nasil">
+    <div class="wrap">
+      <div class="head" data-r>
+        <span class="eyebrow">Nasıl çalışır</span>
+        <h2>Üç adım. Hepsi bu.</h2>
+        <p>Karmaşık form yok, pazarlık telefonu yok. Uygulamada başlar, uygulamada biter.</p>
+      </div>
+      <div class="steps">
+        <article class="step" data-r><span class="sn">01</span><h3>İşini anlat</h3><p>Kategoriyi seç, birkaç fotoğraf ekle, konumu ve bütçeni belirt.</p></article>
+        <article class="step" data-r><span class="sn">02</span><h3>Teklifleri karşılaştır</h3><p>Yakınındaki ustalardan gelen teklifleri fiyat, puan ve mesafeyle kıyasla.</p></article>
+        <article class="step" data-r><span class="sn">03</span><h3>Ustanı seç</h3><p>Mesajlaş, işi planla, tamamlanınca puanla. Ödemesi sende, kontrolü sende.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ PINNED SHOWCASE ════════════ -->
+  <section class="show" id="show">
+    <div class="wrap show-in">
+      <div class="show-stage">
+        <div class="phone sm" id="showPhone">
+          <div class="screen">
+            <div class="sbar"><span>9:41</span><span class="sb-r"><i></i><i></i><i></i></span></div>
+
+            <div class="sc sc1 on">
+              <div class="sc-h">İlan Ver</div>
+              <div class="wiz"><i class="a"></i><i></i><i></i></div>
+              <div class="pick sel"><span class="pi" style="background:var(--cat-boya-bg);color:var(--cat-boya)">◧</span><span><b>Boya &amp; Badana</b><em>İç cephe, tavan, dekoratif</em></span><span class="chk">✓</span></div>
+              <div class="pick"><span class="pi" style="background:var(--cat-elektrik-bg);color:var(--cat-elektrik)">⚡</span><span><b>Elektrik</b><em>Priz, avize, tesisat</em></span></div>
+              <div class="pick"><span class="pi" style="background:var(--cat-montaj-bg);color:var(--cat-montaj)">✚</span><span><b>Mobilya Montajı</b><em>Kurulum, sökme-takma</em></span></div>
+              <div class="cta-b">Devam et</div>
+            </div>
+
+            <div class="sc sc2">
+              <div class="sc-h">Teklifler <em>5</em></div>
+              <div class="off"><img src="assets/img/av1.jpg" alt="" /><span><b>Mehmet U.</b><em>★ 4,9 (128) · 1,2 km</em></span><span class="pr">₺3.500</span></div>
+              <div class="off"><img src="assets/img/av2.jpg" alt="" /><span><b>Ahmet Y.</b><em>★ 4,8 (96) · 2,1 km</em></span><span class="pr">₺3.750</span></div>
+              <div class="off"><img src="assets/img/av3.jpg" alt="" /><span><b>Emre K.</b><em>★ 4,7 (74) · 1,8 km</em></span><span class="pr">₺3.250</span></div>
+              <div class="off dim"><img src="assets/img/av-customer.jpg" alt="" /><span><b>Deniz T.</b><em>★ 4,6 (55) · 2,5 km</em></span><span class="pr">₺3.600</span></div>
+              <div class="cta-b">Teklifi kabul et</div>
+            </div>
+
+            <div class="sc sc3">
+              <div class="sc-h back">Mehmet U. <em>Çevrimiçi</em></div>
+              <div class="chat">
+                <div class="bub me">Merhaba, pazartesi başlayabilir misiniz?</div>
+                <div class="bub th">Merhaba, evet pazartesi uygunum.</div>
+                <div class="bub th">Malzemeyi ben getiriyorum.</div>
+                <div class="bub me">Harika, anlaştık 👍</div>
+                <div class="typing"><i></i><i></i><i></i></div>
+              </div>
+              <div class="inputbar"><span>Mesajını yaz…</span><b>➤</b></div>
             </div>
           </div>
         </div>
-        <div class="intro-steps">
-          <div class="intro-step reveal">
-            <span class="k">01</span>
-            <h2>Zaten bir ustasın.</h2>
-            <p>Hafta içi bir işte çalışıyorsun ama aslında boyacı, elektrikçi ya da montaj ustasısın. Bu yeteneğin akşamları ve hafta sonları boşta.</p>
-          </div>
-          <div class="intro-step reveal">
-            <span class="k">02</span>
-            <h2>Yakınında iş var.</h2>
-            <p>USTO, konumuna en yakın işleri önüne getirir. Sen uygun olduğun işi seç, tek dokunuşla teklif ver.</p>
-          </div>
-          <div class="intro-step reveal">
-            <span class="k">03</span>
-            <h2>Boş zaman, gelire dönüşür.</h2>
-            <p>İşi tamamla, puanını yükselt, kazancını büyüt. Emeğin görünür, güvenin puanla artar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ NASIL ÇALIŞIR ============ -->
-    <section class="how" id="nasil">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="eyebrow">Nasıl çalışır</span>
-          <h2>Üç adımda işini hallet</h2>
-        </div>
-        <div class="how-track">
-          <article class="how-card reveal"><span class="n">1</span><h3>İlanını oluştur</h3><p>Kategori seç, fotoğraf ekle, konum ve bütçeni belirt. 60 saniyede yayında.</p></article>
-          <article class="how-card reveal"><span class="n">2</span><h3>Teklifleri karşılaştır</h3><p>Yakındaki ustalardan gelen teklifleri fiyat, puan ve mesafeye göre kıyasla.</p></article>
-          <article class="how-card reveal"><span class="n">3</span><h3>Seç ve sohbet et</h3><p>Doğrudan mesajlaş, işi planla, tamamlanınca puanla. Güven puanla büyür.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ KATEGORİLER — sinematik satırlar ============ -->
-    <section class="cats" id="kategoriler">
-      <div class="wrap section-head center reveal">
-        <span class="eyebrow">Hizmetler</span>
-        <h2>Üç uzmanlık, tek uygulama</h2>
-        <p class="muted">İlk sürümde en çok ihtiyaç duyulan üç kategori.</p>
       </div>
 
-      <article class="cat-row reveal" style="--accent:var(--cat-boya)">
-        <div class="cat-media"><img data-parallax="0.14" src="assets/img/hero-paint.jpg" alt="Boya & badana" /></div>
-        <div class="cat-copy">
-          <span class="cat-tag">01 · Boya &amp; Badana</span>
-          <h3>Duvarlar yeniden nefes alsın</h3>
-          <p>İç cephe, dış cephe, tavan, dekoratif boya. Titiz, temiz ve zamanında teslim eden ustalar.</p>
+      <div class="show-copy">
+        <div class="show-step" data-s="1">
+          <span class="eyebrow">Adım 01</span>
+          <h2>İşini anlat.</h2>
+          <p>Kategoriyi seç, fotoğrafları ekle. 60 saniyede ilanın yayında ve yakındaki ustalara ulaşıyor.</p>
         </div>
-      </article>
-
-      <article class="cat-row reverse reveal" style="--accent:var(--cat-elektrik)">
-        <div class="cat-media"><img data-parallax="0.14" src="assets/img/electric.jpg" alt="Elektrik" /></div>
-        <div class="cat-copy">
-          <span class="cat-tag">02 · Elektrik</span>
-          <h3>Priz, avize, tesisat — güvenle</h3>
-          <p>Aydınlatma montajı, sigorta, arıza ve tesisat işleri. Doğru ustayla riski değil, işi düşün.</p>
+        <div class="show-step" data-s="2">
+          <span class="eyebrow">Adım 02</span>
+          <h2>Teklifleri gör.</h2>
+          <p>Fiyat, puan ve mesafe yan yana. Gerçek değerlendirmelerle en doğru kararı ver.</p>
         </div>
-      </article>
-
-      <article class="cat-row reveal" style="--accent:var(--cat-montaj)">
-        <div class="cat-media"><img data-parallax="0.14" src="assets/img/furniture.jpg" alt="Mobilya montajı" /></div>
-        <div class="cat-copy">
-          <span class="cat-tag">03 · Mobilya Montajı</span>
-          <h3>Kutudan çıktı, yerini buldu</h3>
-          <p>Gardırop, mutfak, raf, sökme-takma. Parçalar sende, ustalık USTO'da.</p>
-        </div>
-      </article>
-    </section>
-
-    <!-- ============ GÜVEN — istatistik ============ -->
-    <section class="trust" id="guven">
-      <div class="trust-media" data-parallax="0.2">
-        <img src="assets/img/trust.jpg" alt="Ev sahibi ve usta el sıkışıyor" />
-        <div class="trust-scrim"></div>
-      </div>
-      <div class="wrap trust-inner">
-        <div class="section-head center reveal">
-          <span class="eyebrow light">Neden USTO</span>
-          <h2 class="on-dark">Güven için tasarlandı</h2>
-        </div>
-        <div class="stats">
-          <div class="stat reveal"><b data-count="3">0</b><span>hizmet kategorisi</span></div>
-          <div class="stat reveal"><b data-count="2" data-prefix="&lt; " data-suffix=" sa">0</b><span>ilk teklif süresi</span></div>
-          <div class="stat reveal"><b data-count="4.8" data-decimals="1" data-suffix="★">0</b><span>ortalama memnuniyet</span></div>
-          <div class="stat reveal"><b data-count="98" data-suffix="%">0</b><span>önerilme oranı</span></div>
+        <div class="show-step" data-s="3">
+          <span class="eyebrow">Adım 03</span>
+          <h2>Anlaş ve bitir.</h2>
+          <p>Uygulama içi sohbetle planla. İş bitince puanla — güven böyle büyür.</p>
         </div>
       </div>
-    </section>
-
-    <!-- ============ İNDİR ============ -->
-    <section class="download" id="indir">
-      <div class="wrap">
-        <div class="cta-band reveal">
-          <h2>Boş zamanını gelire dönüştürmeye hazır mısın?</h2>
-          <p>İster usta ol, ister güvenilir usta bul. Hemen web'de dene; App Store ve Google Play çok yakında.</p>
-          <div class="store-row">
-            <a class="store primary" href="app/">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 5h2v6h-2V7zm0 8h2v2h-2v-2z"/></svg>
-              <span><small>Tarayıcıda</small>Web'de dene</span>
-            </a>
-            <a class="store" href="app/" title="Çok yakında">
-              <svg viewBox="0 0 384 512" width="20" height="24" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM255.4 90.4c22.6-27.7 20.6-52.8 19.9-61.9-22.6 1.3-48.7 15.4-63.6 32.8-16.4 18.9-26 42.2-24 66.9 24.5 1.9 46.8-10.6 67.7-37.8z"/></svg>
-              <span><small>Çok yakında</small>App Store</span>
-            </a>
-            <a class="store" href="app/" title="Çok yakında">
-              <svg viewBox="0 0 512 512" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M48 59.5v393c0 5.4 6.4 8.2 10.4 4.6l219.9-197L58.4 54.9C54.4 51.3 48 54.1 48 59.5zm297 141.3l-53.9-30.9-64.2 57.5 64.2 57.5 54-30.9c15.6-8.9 15.6-44.3-.1-53.2zM306.5 159L94.1 37.8l178.2 159.7L306.5 159zM272.3 314.5L94.1 474.2 306.5 353l-34.2-38.5z"/></svg>
-              <span><small>Çok yakında</small>Google Play</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="#top"><img class="logo-img" src="assets/img/usto-icon.png" alt="" width="34" height="34" /> USTO</a>
-        <p class="muted">Boş zamanını gelire dönüştür. Emekle güveni buluşturuyoruz.</p>
-      </div>
-      <div><h5>Ürün</h5><a href="#nasil">Nasıl çalışır</a><a href="#kategoriler">Hizmetler</a><a href="app/">Uygulama</a></div>
-      <div><h5>Şirket</h5><a href="#">Hakkımızda</a><a href="#">İletişim</a><a href="#">Blog</a></div>
-      <div><h5>Yasal</h5><a href="legal/privacy.html">Gizlilik</a><a href="legal/terms.html">Şartlar</a><a href="legal/kvkk.html">KVKK</a><a href="legal/cookie.html">Çerez</a></div>
     </div>
-    <div class="wrap footer-bottom">
-      <span>© 2026 USTO. Tüm hakları saklıdır.</span>
-      <span>Türkiye'de sevgiyle yapıldı ♥</span>
-    </div>
-  </footer>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="scripts/site.js" defer></script>
+  <!-- ════════════ GÜVEN ════════════ -->
+  <section class="trust" id="guven">
+    <div class="wrap">
+      <div class="head center" data-r>
+        <span class="eyebrow">Güven</span>
+        <h2>Rastgele değil, doğrulanmış.</h2>
+        <p>Evine aldığın kişiyi tanıman gerekir. USTO bunu standart hale getiriyor.</p>
+      </div>
+      <div class="tcards">
+        <article class="tcard" data-r>
+          <span class="ti">🛡️</span><h3>Kimlik doğrulama</h3>
+          <p>Ustalar kimlik doğrulamasından geçer, profilinde "Onaylı" rozeti görünür.</p>
+        </article>
+        <article class="tcard" data-r>
+          <span class="ti">⭐</span><h3>Gerçek puanlar</h3>
+          <p>Yalnızca tamamlanan işlerden puan verilir. Sahte yorum yok.</p>
+        </article>
+        <article class="tcard" data-r>
+          <span class="ti">🎯</span><h3>Akıllı eşleştirme</h3>
+          <p>Kategori, konum ve uygunluğa göre işini görecek doğru ustalar seçilir.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ USTALAR İÇİN ════════════ -->
+  <section class="pro" id="ustalar">
+    <div class="wrap">
+      <div class="pro-card" data-r>
+        <div class="pro-copy">
+          <span class="eyebrow light">Ustalar için</span>
+          <h2>Ustalığını değerlendir.</h2>
+          <p>Çevrendeki işleri gör, uygun olduklarına teklif ver. Takvimini sen belirle, itibarını puanla büyüt.</p>
+          <ul>
+            <li>Yakınındaki işler anında bildirim</li>
+            <li>Zaman, konum ve kategoriye göre filtre</li>
+            <li>Kazanç ve performans paneli</li>
+          </ul>
+          <a href="app/" class="btn white lg">Usta olarak katıl</a>
+        </div>
+        <div class="pro-media"><img src="assets/img/usta-portrait.jpg" alt="USTO ustası" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ YORUMLAR ════════════ -->
+  <section class="quotes">
+    <div class="wrap">
+      <div class="head center" data-r><span class="eyebrow">Kullanıcılar</span><h2>Deneyimi anlatanlar.</h2></div>
+      <div class="qgrid">
+        <figure class="q" data-r>
+          <blockquote>Salonu boyatacaktım, iki saatte beş teklif geldi. Puanı en yüksek ustayı seçtim, iş bir günde bitti.</blockquote>
+          <figcaption><img src="assets/img/av-customer.jpg" alt="" /><span><b>Elif K.</b><em>Kadıköy, İstanbul</em></span></figcaption>
+        </figure>
+        <figure class="q" data-r>
+          <blockquote>Hafta sonları boştaydım. Şimdi çevremdeki işleri görüyorum, ayda birkaç iş alıyorum. Süreç çok net.</blockquote>
+          <figcaption><img src="assets/img/av1.jpg" alt="" /><span><b>Mehmet U.</b><em>Boya Ustası</em></span></figcaption>
+        </figure>
+        <figure class="q" data-r>
+          <blockquote>Avize montajı için aradım, aynı gün geldi. Fiyat baştan belliydi, sürpriz çıkmadı.</blockquote>
+          <figcaption><img src="assets/img/av2.jpg" alt="" /><span><b>Ahmet Y.</b><em>Ankara</em></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ SSS ════════════ -->
+  <section class="faq" id="sss">
+    <div class="wrap">
+      <div class="head center" data-r><span class="eyebrow">SSS</span><h2>Merak edilenler.</h2></div>
+      <div class="faq-list" data-r>
+        <details><summary>USTO kullanmak ücretli mi?<i></i></summary><p>Hayır. İlan vermek ve teklif almak ücretsizdir.</p></details>
+        <details><summary>Ustalar nasıl doğrulanıyor?<i></i></summary><p>Ustalar kimlik doğrulamasından geçer; onaylananların profilinde "Onaylı" rozeti görünür. Puanlar yalnızca tamamlanan işlerden verilir.</p></details>
+        <details><summary>Ödeme nasıl yapılıyor?<i></i></summary><p>İlk sürümde ödeme, iş bitiminde usta ile aranızda gerçekleşir. Uygulama içi güvenli ödeme yakında.</p></details>
+        <details><summary>Hangi hizmetler var?<i></i></summary><p>Boya &amp; badana, elektrik ve mobilya montajı ile başlıyoruz. Yeni kategoriler yolda.</p></details>
+        <details><summary>Verilerim güvende mi?<i></i></summary><p>KVKK'ya uygun çalışır, verilerini şifreli saklarız ve hesabını dilediğinde silebilirsin.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CTA ════════════ -->
+  <section class="final">
+    <div class="wrap">
+      <div class="final-in" data-r>
+        <h2>İşini ustasına bırak.</h2>
+        <p>Dakikalar içinde doğru ustayla buluş.</p>
+        <div class="stores">
+          <a class="store solid" href="app/"><span><small>Hemen</small>Web'de aç</span></a>
+          <a class="store" href="app/" title="Çok yakında">
+            <svg viewBox="0 0 384 512" width="18" height="22" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM255.4 90.4c22.6-27.7 20.6-52.8 19.9-61.9-22.6 1.3-48.7 15.4-63.6 32.8-16.4 18.9-26 42.2-24 66.9 24.5 1.9 46.8-10.6 67.7-37.8z"/></svg>
+            <span><small>Çok yakında</small>App Store</span>
+          </a>
+          <a class="store" href="app/" title="Çok yakında">
+            <svg viewBox="0 0 512 512" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M48 59.5v393c0 5.4 6.4 8.2 10.4 4.6l219.9-197L58.4 54.9C54.4 51.3 48 54.1 48 59.5zm297 141.3l-53.9-30.9-64.2 57.5 64.2 57.5 54-30.9c15.6-8.9 15.6-44.3-.1-53.2zM306.5 159L94.1 37.8l178.2 159.7L306.5 159zM272.3 314.5L94.1 474.2 306.5 353l-34.2-38.5z"/></svg>
+            <span><small>Çok yakında</small>Google Play</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <a class="brand" href="#top"><img src="assets/img/usto-icon.png" alt="" width="32" height="32" /><span>USTO</span></a>
+      <p>İşini ustasına bırak.</p>
+    </div>
+    <div><h5>Ürün</h5><a href="#nasil">Nasıl çalışır</a><a href="#guven">Güven</a><a href="#ustalar">Ustalar için</a><a href="app/">Uygulama</a></div>
+    <div><h5>Şirket</h5><a href="#">Hakkımızda</a><a href="#">İletişim</a><a href="#">Blog</a></div>
+    <div><h5>Yasal</h5><a href="legal/privacy.html">Gizlilik</a><a href="legal/terms.html">Şartlar</a><a href="legal/kvkk.html">KVKK</a><a href="legal/cookie.html">Çerez</a></div>
+  </div>
+  <div class="wrap foot-b"><span>© 2026 USTO</span><span>Türkiye'de tasarlandı</span></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="scripts/site.js?v=3" defer></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
-  "name": "USTO — Boş zamanını gelire dönüştür",
+  "name": "USTO — İşini ustasına bırak",
   "short_name": "USTO",
-  "description": "Ustalar ile müşterileri güvenle buluşturan hizmet pazar yeri.",
+  "description": "Güvenilir ustalarla dakikalar içinde buluş.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
