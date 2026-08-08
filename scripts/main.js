@@ -1,4 +1,4 @@
-// USTO — landing etkileşimleri
+// USTAG — landing etkileşimleri
 (function () {
   'use strict';
 

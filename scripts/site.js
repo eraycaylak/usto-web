@@ -1,4 +1,4 @@
-// USTO — scroll motion (Lenis + GSAP ScrollTrigger)
+// USTAG — scroll motion (Lenis + GSAP ScrollTrigger)
 (function () {
   'use strict';
   var doc = document.documentElement;

@@ -1,4 +1,4 @@
-/* USTO — yasal sayfa okuma stili */
+/* USTAG — yasal sayfa okuma stili */
 .legal { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
 .legal .back { display: inline-flex; align-items: center; gap: 6px; color: var(--color-primary); font-weight: 600; margin-bottom: 24px; }
 .legal h1 { font-family: var(--font-head); font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); margin-bottom: 8px; }
