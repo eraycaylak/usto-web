@@ -124927,7 +124927,7 @@ K(){return"PreferredLaunchMode."+this.b}}
 A.aV1.prototype={}
 A.aaM.prototype={
 eN(a,b){var s=b.b7($.bzL(),t.aq),r=b.b7($.bi8(),t.jm),q=b.b7($.bi5(),t.da)
-return new A.Ci(s,new A.aV9(),"USTO",A.bnT(B.kc,B.z5,B.j,B.a0l,B.dq),A.bnT(B.ka,B.ju,B.e9,B.a0o,B.vE),r,q,B.aaj,B.a8_,!1,null)}}
+return new A.Ci(s,new A.aV9(),"USTAG",A.bnT(B.kc,B.z5,B.j,B.a0l,B.dq),A.bnT(B.ka,B.ju,B.e9,B.a0o,B.vE),r,q,B.aaj,B.a8_,!1,null)}}
 A.aV9.prototype={
 $2(a,b){var s=A.ai(a,null,t.l).w,r=s.Hf(s.gde().oy(0,1.3,0.9))
 return A.mZ(b==null?B.ao:b,r)},
@@ -125548,7 +125548,7 @@ A.PI.prototype={
 m(a){var s,r=null,q=this.d,p=q?B.j:A.d(a).ax.k3,o=this.c,n=o*0.25,m=A.Q(a,B.m,t.J)
 m.toString
 m=m.gQH(m)
-s=A.x("USTO",r,r,r,r,A.ji().$5$color$fontSize$fontWeight$height$letterSpacing(p,o,B.aE,1.25,-1.2),r,r,r)
+s=A.x("USTAG",r,r,r,r,A.ji().$5$color$fontSize$fontWeight$height$letterSpacing(p,o,B.aE,1.25,-1.2),r,r,r)
 return A.aN(r,r,r,new A.ev(!0,A.d6(B.aD,A.b([s,A.fy(r,A.aa(r,r,B.l,r,r,new A.ae(q?B.j:B.a7,r,r,r,r,r,B.az),r,n,r,r,r,r,n),r,r,r,o*0.14,o*0.22,r)],t.p),B.l,B.ax,r),r),!1,r,r,r,!1,!1,r,r,r,r,r,r,r,r,r,r,m,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.w,r)}}
 A.I_.prototype={
 m(a){var s,r,q,p,o=null,n="ustas\u0131na",m=this.c
@@ -127963,7 +127963,7 @@ return null},
 $S:0}
 A.avt.prototype={
 $0(){var s=this.a
-return A.aQK(s.b+" \u2014 "+s.e+"\nUSTO'da g\xfcvenilir ustalar\u0131 ke\u015ffet: https://eraycaylak.github.io/usto-web",null)},
+return A.aQK(s.b+" \u2014 "+s.e+"\nUSTAG'da g\xfcvenilir ustalar\u0131 ke\u015ffet: https://eraycaylak.github.io/usto-web",null)},
 $S:0}
 A.avw.prototype={
 $0(){return B.Wt},
@@ -130419,7 +130419,7 @@ return null},
 $S:0}
 A.aDm.prototype={
 $0(){var s=this.a
-return A.aQK(s.d+" \u2014 "+s.c.c+"\nUSTO'da ilan\u0131 g\xf6r: https://eraycaylak.github.io/usto-web",null)},
+return A.aQK(s.d+" \u2014 "+s.c.c+"\nUSTAG'da ilan\u0131 g\xf6r: https://eraycaylak.github.io/usto-web",null)},
 $S:0}
 A.aDp.prototype={
 $0(){return B.aj9},
@@ -134189,7 +134189,7 @@ hJ(a,b){return new A.cl(A.bPb(b),t.kL)},
 u6(a){return B.b.n(A.b(["en","tr"],t.s),a.gdM(0))},
 rt(a){return!1}}
 A.Y9.prototype={
-gQH(a){return"USTO"},
+gQH(a){return"USTAG"},
 gH3(){return"Next"},
 gaay(){return"Back"},
 gaaE(){return"Skip"},
@@ -134236,7 +134236,7 @@ gagI(){return"Resend code"},
 agJ(a){return"Resend in "+a+"s"},
 gagH(){return"Wrong code. Try again."},
 gagM(){return"Verify"},
-gajK(){return"How do you want to use USTO?"},
+gajK(){return"How do you want to use USTAG?"},
 gajJ(){return"You can switch anytime."},
 gajI(){return"I'm a customer"},
 gajH(){return"Post a job, get offers, pick your pro."},
@@ -134653,7 +134653,7 @@ ga9g(){return"Too many attempts. Try again in a minute."},
 ga9b(){return"No connection"},
 ga9i(){return"We could not save that. Try again shortly."}}
 A.Ya.prototype={
-gQH(a){return"USTO"},
+gQH(a){return"USTAG"},
 gH3(){return"Devam"},
 gaay(){return"Geri"},
 gaaE(){return"Atla"},
