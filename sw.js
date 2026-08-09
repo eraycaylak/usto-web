@@ -3,11 +3,16 @@
 //  • Gezinme/HTML  → NETWORK-FIRST (bayat sayfa servis etmeyi önler), çevrimdışıysa cache
 //  • Statik varlık → stale-while-revalidate
 //  • /app/ (Flutter web) → HİÇ dokunma; kendi service worker'ı var, çakışmasın
-var CACHE = 'ustag-v8';
+// TEK sürüm sabiti — HTML'deki ?v=N ile aynı tutulmalı.
+var VER = 9;
+var CACHE = 'ustag-v' + VER;
+// Ön-önbellek: sorgu dizesi HTML'dekiyle birebir aynı olmalı, yoksa istek eşleşmez.
+var Q = '?v=' + VER;
 var ASSETS = [
   './', './index.html',
-  './styles/tokens.css', './styles/site.css', './scripts/site.js',
-  './manifest.webmanifest', './favicon.png'
+  './styles/tokens.css' + Q, './styles/site.css' + Q, './scripts/site.js' + Q,
+  './vendor/lenis-1.1.13.min.js', './vendor/gsap-3.12.5.min.js', './vendor/ScrollTrigger-3.12.5.min.js',
+  './manifest.webmanifest', './favicon.png', './assets/favicon.svg'
 ];
 
 self.addEventListener('install', function (e) {
@@ -58,8 +63,10 @@ self.addEventListener('fetch', function (e) {
   }
 
   // Statik varlık → stale-while-revalidate
+  // ignoreSearch: sürüm sorgusu (?v=N) değiştiğinde bile önbellekteki kopya bulunabilsin;
+  // tazeleme yine arka planda ağdan yapılır.
   e.respondWith(
-    caches.match(req).then(function (hit) {
+    caches.match(req, { ignoreSearch: true }).then(function (hit) {
       var net = fetch(req).then(function (res) {
         if (res && res.ok) {
           var copy = res.clone();

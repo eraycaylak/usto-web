@@ -16,6 +16,34 @@
     addEventListener('load', function () { navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {}); });
   }
 
+  // Mobil menü — 980px altında hamburger. Görünürlüğü CSS'teki .open belirler,
+  // JS yalnızca sınıfı ve aria durumunu taşır.
+  (function setupMenu() {
+    var btn = document.getElementById('menuBtn');
+    var links = document.getElementById('navLinks');
+    if (!btn || !links) return;
+    function setOpen(open) {
+      links.classList.toggle('open', open);
+      if (nav) nav.classList.toggle('menu-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+    }
+    btn.addEventListener('click', function () {
+      setOpen(btn.getAttribute('aria-expanded') !== 'true');
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);      // bağlantıya basınca kapan
+    });
+    addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setOpen(false); btn.focus(); }
+    });
+    // Masaüstüne genişleyince açık kalmasın (CSS menüyü yatay listeye çevirir)
+    var wide = matchMedia('(min-width: 981px)');
+    var onWide = function (m) { if (m.matches) setOpen(false); };
+    if (wide.addEventListener) wide.addEventListener('change', onWide);
+    else if (wide.addListener) wide.addListener(onWide);       // eski Safari
+  })();
+
   // Reveal sistemi — saf CSS sınıfı (rAF'a bağımlı değil)
   function setupReveal() {
     doc.classList.add('js-r');                 // ancak JS varsa gizle
@@ -51,26 +79,13 @@
     }, 4000);
   }
 
-  // Sayaç (prefix/suffix/ondalık destekli) — motion olsun olmasın çalışsın
-  function runCounter(el, animate) {
-    var target = parseFloat(el.getAttribute('data-count'));
-    var dec = parseInt(el.getAttribute('data-dec') || '0', 10);
-    var pre = el.getAttribute('data-prefix') || '';
-    var suf = el.getAttribute('data-suffix') || '';
-    function render(v) {
-      var n = dec ? v.toFixed(dec).replace('.', ',') : Math.round(v).toLocaleString('tr-TR');
-      el.textContent = pre + n + suf;
-    }
-    if (!animate) { render(target); return; }
-    var o = { v: 0 };
-    window.gsap.to(o, { v: target, duration: 1.8, ease: 'power2.out', onUpdate: function () { render(o.v); } });
-  }
+  // NOT: Sayaç (data-count) mantığı kaldırıldı — şerit artık doğrulanamayan rakam değil
+  // sabit ifade taşıyor, animasyonlu sayaca gerek yok.
 
   if (!hasG || reduce) {
     addEventListener('scroll', function () { ui(scrollY); }, { passive: true });
     ui(scrollY);
     setupReveal();
-    document.querySelectorAll('[data-count]').forEach(function (el) { runCounter(el, false); });
     return;
   }
 
@@ -124,17 +139,6 @@
       gsap.to('#heroPhone,.fcard', { x: 0, y: 0, duration: 1, ease: 'power2.out' });
     });
   }
-
-  // Sayaçlar
-  gsap.utils.toArray('[data-count]').forEach(function (el) {
-    ST.create({ trigger: el, start: 'top 92%', once: true, onEnter: function () { runCounter(el, true); } });
-  });
-  // Emniyet: animasyon karesi durursa sayaçlar "0" kalmasın
-  setTimeout(function () {
-    document.querySelectorAll('[data-count]').forEach(function (el) {
-      if (el.textContent.trim() === '0') runCounter(el, false);
-    });
-  }, 4000);
 
   addEventListener('load', function () { ST.refresh(); });
 })();

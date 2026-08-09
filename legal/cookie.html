@@ -4,35 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#2563EB" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'" />
   <title>Çerez Politikası — USTAG</title>
-  <meta name="description" content="USTAG çerez politikası: hangi çerezleri neden kullanıyoruz." />
+  <meta name="description" content="USTAG çerez politikası: tanıtım sitemiz çerez kullanmaz; kullandığımız tek üçüncü taraf Google Fonts'tur." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
   <link rel="icon" type="image/png" href="../favicon.png" />
   <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/tokens.css" />
-  <link rel="stylesheet" href="../styles/site.css" />
-  <link rel="stylesheet" href="legal.css" />
-  <script>(function(){try{var t=localStorage.getItem('usto-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="stylesheet" href="../styles/tokens.css?v=9" />
+  <link rel="stylesheet" href="../styles/site.css?v=9" />
+  <link rel="stylesheet" href="legal.css?v=9" />
 </head>
 <body>
   <article class="legal">
     <a class="back" href="../index.html">← Ana sayfa</a>
     <h1>Çerez Politikası</h1>
-    <p class="updated">Son güncelleme: 23 Temmuz 2026</p>
+    <p class="updated">Son güncelleme: 9 Ağustos 2026</p>
 
-    <p>Bu web sitesi, deneyimini iyileştirmek için sınırlı sayıda çerez ve benzeri teknoloji kullanır. Mobil uygulama, tarayıcı çerezleri yerine güvenli yerel depolama kullanır.</p>
+    <p>Bu tanıtım sitesi <b>hiçbir çerez yerleştirmez</b> ve ziyaretini izlemez. Aşağıda kullandığımız teknolojilerin tamamını sayıyoruz. Mobil uygulama, tarayıcı çerezleri yerine güvenli yerel depolama kullanır.</p>
 
-    <h2>1. Kullandığımız Çerez Türleri</h2>
+    <h2>1. Çerezler</h2>
+    <p>Tanıtım sayfalarında (ana sayfa ve yasal sayfalar) çerez kullanılmaz. Bu nedenle bir çerez rıza penceresi de göstermiyoruz. Analitik, reklam ve profilleme çerezi hiç yoktur.</p>
+
+    <h2>2. Çerez Dışı Teknolojiler</h2>
     <ul>
-      <li><b>Zorunlu:</b> sitenin çalışması için gerekli (ör. tema tercihi <code>usto-theme</code>). Bunlar rıza gerektirmez.</li>
-      <li><b>Analitik (isteğe bağlı):</b> ziyaret istatistiklerini toplu ve anonim ölçmek için. Ancak rıza verirsen etkinleşir.</li>
+      <li><b>Service worker önbelleği:</b> sayfa, stil ve betik dosyalarını tarayıcının önbelleğinde tutarak siteyi çevrimdışıyken de açılabilir kılar. Kişisel veri içermez; tarayıcı ayarlarından site verilerini silerek temizleyebilirsin.</li>
+      <li><b>Uygulama yerel depolaması:</b> <code>/app/</code> altındaki uygulamada oturum açarsan, oturumun açık kalması için gereken bilgi tarayıcının yerel depolamasında saklanır. Çıkış yaptığında silinir.</li>
     </ul>
 
-    <h2>2. Tercih Yönetimi</h2>
-    <p>Tarayıcı ayarlarından çerezleri silebilir veya engelleyebilirsin. Zorunlu çerezleri engellemek bazı özellikleri bozabilir. Tema tercihi tarayıcının <code>localStorage</code> alanında tutulur ve dilediğinde temizlenebilir.</p>
-
     <h2>3. Üçüncü Taraf</h2>
-    <p>Yazı tipleri Google Fonts üzerinden yüklenir. Analitik kullanıldığında ilgili sağlayıcının politikası da geçerli olur.</p>
+    <p>Tek üçüncü taraf <b>Google Fonts</b>'tur: yazı tipleri <code>fonts.googleapis.com</code> ve <code>fonts.gstatic.com</code> üzerinden yüklenir; bu istekler sırasında IP adresin Google'a ulaşır. Animasyon kütüphaneleri dahil diğer tüm dosyalar kendi sunucumuzdan servis edilir; harici bir CDN kullanılmaz.</p>
 
     <h2>4. İletişim</h2>
     <p><a href="mailto:destek@ustag.app">destek@ustag.app</a></p>

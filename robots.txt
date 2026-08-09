@@ -1,0 +1,13 @@
+# USTAG — tanıtım sitesi
+# NOT: robots.txt yalnızca alan adı kökünden okunur. Site şu an
+# eraycaylak.github.io/usto-web/ altında yayınlandığı için bu dosya ancak
+# özel alan adına (ör. ustag.app) geçildiğinde geçerli olur.
+# Sitemap'i o zamana kadar Search Console'a doğrudan URL ile gönder.
+
+User-agent: *
+Allow: /
+
+# Flutter web uygulaması canvas ile çizilir; taranacak metin içermez.
+Disallow: /app/
+
+Sitemap: https://eraycaylak.github.io/usto-web/sitemap.xml

@@ -46,7 +46,8 @@
   --e3: 0 12px 32px rgba(15,23,42,.10), 0 4px 8px rgba(15,23,42,.04);
   --e4: 0 28px 70px rgba(15,23,42,.14), 0 8px 20px rgba(15,23,42,.06);
   --e-blue: 0 16px 40px rgba(37,99,235,.28);
-  --focus-ring: 0 0 0 4px rgba(37,99,235,.28);
+  /* Opak olmalı: yarı saydam halka beyaz zeminde 1.5:1'e düşüyordu */
+  --focus-ring: 0 0 0 3px #1D4ED8;
 
   /* Motion */
   --d-fast: 180ms; --d-normal: 300ms; --d-slow: 600ms;

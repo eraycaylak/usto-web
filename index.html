@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#FFFFFF" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
   <title>USTAG — İşini ustasına bırak.</title>
   <meta name="description" content="Güvenilir ustaları keşfet, ihtiyacın olan hizmete dakikalar içinde ulaş. Boya & badana, elektrik, mobilya montajı." />
   <link rel="canonical" href="https://eraycaylak.github.io/usto-web/" />
@@ -15,6 +16,7 @@
   <meta property="og:image" content="https://eraycaylak.github.io/usto-web/assets/img/trust.jpg" />
   <meta property="og:locale" content="tr_TR" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -22,20 +24,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=8" />
-  <link rel="stylesheet" href="styles/site.css?v=8" />
+  <link rel="stylesheet" href="styles/tokens.css?v=9" />
+  <link rel="stylesheet" href="styles/site.css?v=9" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"MobileApplication","name":"USTAG","operatingSystem":"iOS, Android, Web","applicationCategory":"LifestyleApplication","description":"Güvenilir ustaları keşfet, ihtiyacın olan hizmete dakikalar içinde ulaş.","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},"inLanguage":"tr-TR"}
   </script>
 </head>
 <body>
+<a class="skip" href="#top">İçeriğe atla</a>
 <div class="progress" id="progress" aria-hidden="true"></div>
 
 <!-- ═══════════ NAV ═══════════ -->
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top"><img src="assets/img/usto-icon.png" alt="" width="36" height="36" /><span>USTAG</span></a>
-    <nav class="nav-links" aria-label="Menü">
+    <a class="brand" href="#top"><img src="assets/favicon.svg" alt="" width="36" height="36" /><span>USTAG</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Menü">
       <a href="#top" class="on">Ana Sayfa</a>
       <a href="#nasil">Nasıl Çalışır?</a>
       <a href="#hizmetler">Hizmetler</a>
@@ -44,8 +47,11 @@
       <a href="#iletisim">İletişim</a>
     </nav>
     <div class="nav-act">
-      <a href="app/" class="btn line sm">Usta Ol</a>
-      <a href="app/" class="btn primary sm">Uygulamayı indir</a>
+      <a href="app/" class="btn line sm nav-pro">Usta Ol</a>
+      <a href="app/" class="btn primary sm"><span class="dn-s">Uygulamayı indir</span><span class="on-s">İndir</span></a>
+      <button class="burger" id="menuBtn" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Menüyü aç">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </div>
   </div>
 </header>
@@ -72,10 +78,10 @@
           <a href="app/"><svg viewBox="0 0 384 512" fill="currentColor" stroke="none" class="si"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM255.4 90.4c22.6-27.7 20.6-52.8 19.9-61.9-22.6 1.3-48.7 15.4-63.6 32.8-16.4 18.9-26 42.2-24 66.9 24.5 1.9 46.8-10.6 67.7-37.8z"/></svg> App Store</a>
           <a href="app/"><svg viewBox="0 0 512 512" fill="currentColor" stroke="none" class="si"><path d="M48 59.5v393c0 5.4 6.4 8.2 10.4 4.6l219.9-197L58.4 54.9C54.4 51.3 48 54.1 48 59.5zm297 141.3l-53.9-30.9-64.2 57.5 64.2 57.5 54-30.9c15.6-8.9 15.6-44.3-.1-53.2zM306.5 159L94.1 37.8l178.2 159.7L306.5 159zM272.3 314.5L94.1 474.2 306.5 353l-34.2-38.5z"/></svg> Google Play</a>
         </div>
-        <a class="scrollhint" data-r data-hero="5" href="#nasil"><span class="mouse"><i></i></span> Kaydırarak keşfet</a>
+        <a class="scrollhint" data-r data-hero="5" href="#nasil"><span class="mouse" aria-hidden="true"><i></i></span> Kaydırarak keşfet</a>
       </div>
 
-      <!-- Telefon + floating kartlar -->
+      <!-- Telefon + floating kartlar (temsilî uygulama görünümü) -->
       <div class="hero-stage">
         <div class="blob" aria-hidden="true"></div>
 
@@ -84,16 +90,16 @@
           <b>Güvenilir Hizmet</b><em>Kimlik doğrulanmış ustalar</em>
         </div>
         <div class="fcard fc2" data-r data-hero="5">
-          <span class="fi"><svg viewBox="0 0 24 24"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 9.7l5.4-.8L12 4z"/></svg></span>
-          <b class="big">4.8 / 5</b><em>Ortalama Puan</em>
+          <span class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M3 10h18"/><path d="M7 14h3"/></svg></span>
+          <b class="big">Ücretsiz</b><em>İlan ver, teklif al</em>
         </div>
         <div class="fcard fc3" data-r data-hero="6">
-          <span class="fi"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.1 2.9-4.8 5.5-4.8s4.9 1.7 5.5 4.8"/><path d="M16.5 6.6a3 3 0 010 5.6M18 19c-.3-1.7-1-3-2-3.9"/></svg></span>
-          <b class="big">25.000+</b><em>Mutlu Müşteri</em>
+          <span class="fi"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <b>Yeni yayında</b><em>İlk ustalarımız İstanbul'da</em>
         </div>
 
-        <div class="phone" id="heroPhone" data-r data-hero="2">
-          <div class="screen">
+        <div class="phone" id="heroPhone" data-r data-hero="2" role="img" aria-label="USTAG uygulamasının temsilî ekran görünümü">
+          <div class="screen" aria-hidden="true">
             <div class="sbar"><span>9:41</span><span class="sb-r"><i></i><i></i><i></i></span></div>
             <div class="app">
               <div class="app-top">
@@ -112,9 +118,9 @@
                 <div class="cat"><span class="ci o"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 01-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 015.4-5.4l-2.5 2.5-1.4-1.4 2.5-2.5z"/></svg></span>Mobilya Montajı</div>
               </div>
               <div class="app-lbl">Yakındaki Ustalar <em>Tümünü Gör</em></div>
-              <div class="app-row"><span class="av"><img src="assets/img/av1.jpg" alt="" /><i></i></span><span class="col"><b>Mehmet U.</b><em>Boya Ustası</em><small>★ 4.9 (128) &nbsp;📍 1.2 km</small></span></div>
-              <div class="app-row"><span class="av"><img src="assets/img/av2.jpg" alt="" /><i></i></span><span class="col"><b>Ahmet Y.</b><em>Elektrik Ustası</em><small>★ 4.8 (96) &nbsp;📍 2.1 km</small></span></div>
-              <div class="app-row"><span class="av"><img src="assets/img/av3.jpg" alt="" /><i></i></span><span class="col"><b>Emre K.</b><em>Mobilya Ustası</em><small>★ 4.9 (74) &nbsp;📍 1.8 km</small></span></div>
+              <div class="app-row"><span class="av"><img src="assets/img/av1.jpg" alt="" width="180" height="180" /><i></i></span><span class="col"><b>Mehmet U.</b><em>Boya Ustası</em><small>Kadıköy</small></span></div>
+              <div class="app-row"><span class="av"><img src="assets/img/av2.jpg" alt="" width="180" height="180" /><i></i></span><span class="col"><b>Ahmet Y.</b><em>Elektrik Ustası</em><small>Beşiktaş</small></span></div>
+              <div class="app-row"><span class="av"><img src="assets/img/av3.jpg" alt="" width="180" height="180" /><i></i></span><span class="col"><b>Emre K.</b><em>Mobilya Ustası</em><small>Üsküdar</small></span></div>
             </div>
             <div class="tabbar">
               <span class="tb on"><svg viewBox="0 0 24 24"><path d="M4 11l8-6 8 6v8a1 1 0 01-1 1h-4v-5h-6v5H5a1 1 0 01-1-1z"/></svg>Ana Sayfa</span>
@@ -129,25 +135,25 @@
     </div>
   </section>
 
-  <!-- ═══════════ STATS ═══════════ -->
-  <section class="stats">
+  <!-- ═══════════ ÖZET ŞERİT ═══════════ -->
+  <section class="stats" aria-label="USTAG özeti">
     <div class="wrap">
       <div class="stats-in" data-r>
         <div class="stat">
-          <span class="sti"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.1 2.9-4.8 5.5-4.8s4.9 1.7 5.5 4.8"/><path d="M16.5 6.6a3 3 0 010 5.6M18 19c-.3-1.7-1-3-2-3.9"/></svg></span>
-          <span class="stt"><b data-count="25000" data-suffix="+">0</b><em>Aktif Müşteri</em></span>
+          <span class="sti"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M3 10h18"/><path d="M7 14h3"/></svg></span>
+          <span class="stt"><b class="word">Ücretsiz</b><em>İlan ver, teklif al</em></span>
         </div>
         <div class="stat">
-          <span class="sti"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"/></svg></span>
-          <span class="stt"><b data-count="15000" data-suffix="+">0</b><em>Tamamlanan İş</em></span>
+          <span class="sti"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="13" height="6" rx="1.5"/><path d="M17 7h3v4h-6v3"/><rect x="11" y="14" width="6" height="6" rx="1.5"/></svg></span>
+          <span class="stt"><b class="word">3 kategori</b><em>Boya, elektrik, montaj</em></span>
         </div>
         <div class="stat">
           <span class="sti"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 8.3-7 9-4-.7-7-4.6-7-9V6l7-3z"/><path d="M9.5 12.5l1.8 1.8 3.4-3.4"/></svg></span>
-          <span class="stt"><b data-count="100" data-prefix="%">0</b><em>Güvenli Hizmet</em></span>
+          <span class="stt"><b class="word">Onaylı usta</b><em>Kimlik doğrulaması</em></span>
         </div>
         <div class="stat">
-          <span class="sti"><svg viewBox="0 0 24 24"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 9.7l5.4-.8L12 4z"/></svg></span>
-          <span class="stt"><b data-count="4.8" data-dec="1" data-suffix=" / 5">0</b><em>Ortalama Puan</em></span>
+          <span class="sti"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <span class="stt"><b class="word">Yeni yayında</b><em>İlk ustalarımız İstanbul'da</em></span>
         </div>
       </div>
     </div>
@@ -168,7 +174,7 @@
           </article>
           <article class="step" data-r>
             <span class="sn">02</span>
-            <div class="sart" aria-hidden="true"><span class="rowlet"><img src="assets/img/av1.jpg" alt="" /><i></i></span><span class="rowlet"><img src="assets/img/av2.jpg" alt="" /><i></i></span><span class="rowlet"><img src="assets/img/av3.jpg" alt="" /><i></i></span></div>
+            <div class="sart" aria-hidden="true"><span class="rowlet"><img src="assets/img/av1.jpg" alt="" width="180" height="180" loading="lazy" decoding="async" /><i></i></span><span class="rowlet"><img src="assets/img/av2.jpg" alt="" width="180" height="180" loading="lazy" decoding="async" /><i></i></span><span class="rowlet"><img src="assets/img/av3.jpg" alt="" width="180" height="180" loading="lazy" decoding="async" /><i></i></span></div>
             <h3>Teklifleri Karşılaştır</h3>
             <p>Ustaların tekliflerini incele, puanları karşılaştır.</p>
           </article>
@@ -185,15 +191,16 @@
         <div class="pro-copy">
           <h2>Usta mısın?</h2>
           <p>Becerini değerlendir,<br />daha fazla kazanç elde et.</p>
-          <a href="app/" class="btn white">Usta Ol <span class="arr">→</span></a>
+          <a href="app/" class="btn white">Usta Ol <span class="arr" aria-hidden="true">→</span></a>
         </div>
-        <div class="pro-img"><img src="assets/img/usta-portrait.jpg" alt="USTAG ustası" /></div>
+        <div class="pro-img">
+          <!-- 560px altında kart görselsiz gösteriliyor; boş kaynakla indirmeyi de engelliyoruz -->
+          <picture>
+            <source media="(max-width:560px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+            <img src="assets/img/usta-portrait.jpg" alt="" width="896" height="1200" loading="lazy" decoding="async" />
+          </picture>
+        </div>
       </aside>
-    </div>
-
-    <div class="wrap brands" data-r>
-      <span class="brands-t">GÜVENİLEN HİZMET, GÜVENİLEN MARKALAR</span>
-      <div class="brands-l"><span>iyzico</span><span>Google</span><span>trendyol</span><span>hepsiburada</span><span>VISA</span></div>
     </div>
   </section>
 
@@ -208,28 +215,16 @@
       <div class="svc-grid">
         <article class="svc-card" data-r style="--a:var(--cat-boya);--ab:var(--cat-boya-bg)">
           <span class="svi"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="13" height="6" rx="1.5"/><path d="M17 7h3v4h-6v3"/><rect x="11" y="14" width="6" height="6" rx="1.5"/></svg></span>
-          <h3>Boya &amp; Badana</h3><p>İç cephe, dış cephe, tavan ve dekoratif boya işleri.</p><span class="svc-n">124 usta müsait</span>
+          <h3>Boya &amp; Badana</h3><p>İç cephe, dış cephe, tavan ve dekoratif boya işleri.</p><span class="svc-n">İlan ver, teklif topla</span>
         </article>
         <article class="svc-card" data-r style="--a:var(--cat-elektrik);--ab:var(--cat-elektrik-bg)">
           <span class="svi"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
-          <h3>Elektrik</h3><p>Priz, avize, anahtar, sigorta, tesisat ve arıza işleri.</p><span class="svc-n">98 usta müsait</span>
+          <h3>Elektrik</h3><p>Priz, avize, anahtar, sigorta, tesisat ve arıza işleri.</p><span class="svc-n">İlan ver, teklif topla</span>
         </article>
         <article class="svc-card" data-r style="--a:var(--cat-montaj);--ab:var(--cat-montaj-bg)">
           <span class="svi"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 01-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 015.4-5.4l-2.5 2.5-1.4-1.4 2.5-2.5z"/></svg></span>
-          <h3>Mobilya Montajı</h3><p>Mobilya kurulumu, sökme-takma ve tamirat işleri.</p><span class="svc-n">86 usta müsait</span>
+          <h3>Mobilya Montajı</h3><p>Mobilya kurulumu, sökme-takma ve tamirat işleri.</p><span class="svc-n">İlan ver, teklif topla</span>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ YORUMLAR ═══════════ -->
-  <section class="quotes">
-    <div class="wrap">
-      <div class="head center" data-r><span class="eyebrow">KULLANICILAR</span><h2>Deneyimi anlatanlar</h2></div>
-      <div class="qgrid">
-        <figure class="q" data-r><blockquote>Salonu boyatacaktım, iki saatte beş teklif geldi. Puanı en yüksek ustayı seçtim, iş bir günde bitti.</blockquote><figcaption><img src="assets/img/av-customer.jpg" alt="" /><span><b>Elif K.</b><em>Kadıköy, İstanbul</em></span></figcaption></figure>
-        <figure class="q" data-r><blockquote>Çevremdeki işleri görüyorum, uygun olduklarına teklif veriyorum. Süreç çok net ve hızlı.</blockquote><figcaption><img src="assets/img/av1.jpg" alt="" /><span><b>Mehmet U.</b><em>Boya Ustası</em></span></figcaption></figure>
-        <figure class="q" data-r><blockquote>Avize montajı için aradım, aynı gün geldi. Fiyat baştan belliydi, sürpriz çıkmadı.</blockquote><figcaption><img src="assets/img/av2.jpg" alt="" /><span><b>Ahmet Y.</b><em>Ankara</em></span></figcaption></figure>
       </div>
     </div>
   </section>
@@ -239,16 +234,17 @@
     <div class="wrap">
       <div class="head center" data-r><span class="eyebrow">SSS</span><h2>Merak edilenler</h2></div>
       <div class="faq-list" data-r>
-        <details><summary>USTAG kullanmak ücretli mi?<i></i></summary><p>Hayır. İlan vermek ve teklif almak ücretsizdir.</p></details>
-        <details><summary>Ustalar nasıl doğrulanıyor?<i></i></summary><p>Ustalar kimlik doğrulamasından geçer; onaylananların profilinde "Onaylı" rozeti görünür. Puanlar yalnızca tamamlanan işlerden verilir.</p></details>
-        <details><summary>Ödeme nasıl yapılıyor?<i></i></summary><p>İlk sürümde ödeme, iş bitiminde usta ile aranızda gerçekleşir. Uygulama içi güvenli ödeme yakında.</p></details>
-        <details><summary>Hangi hizmetler var?<i></i></summary><p>Boya &amp; badana, elektrik ve mobilya montajı ile başlıyoruz. Yeni kategoriler yolda.</p></details>
-        <details><summary>Verilerim güvende mi?<i></i></summary><p>KVKK'ya uygun çalışır, verilerini şifreli saklarız ve hesabını dilediğinde silebilirsin.</p></details>
+        <details><summary>USTAG kullanmak ücretli mi?<i aria-hidden="true"></i></summary><p>Hayır. İlan vermek ve teklif almak ücretsizdir.</p></details>
+        <details><summary>Ustalar nasıl doğrulanıyor?<i aria-hidden="true"></i></summary><p>Ustalar kimlik doğrulamasından geçer; onaylananların profilinde "Onaylı" rozeti görünür. Puanlar yalnızca tamamlanan işlerden verilir.</p></details>
+        <details><summary>Ödeme nasıl yapılıyor?<i aria-hidden="true"></i></summary><p>İlk sürümde ödeme, iş bitiminde usta ile aranızda gerçekleşir. Uygulama içi güvenli ödeme yakında.</p></details>
+        <details><summary>Hangi hizmetler var?<i aria-hidden="true"></i></summary><p>Boya &amp; badana, elektrik ve mobilya montajı ile başlıyoruz. Yeni kategoriler yolda.</p></details>
+        <details><summary>Hangi şehirlerdesiniz?<i aria-hidden="true"></i></summary><p>Yeni yayına aldık; ilk ustalarımızla İstanbul'da başlıyoruz. Bulunduğun şehirde usta yoksa ilanını yine de bırakabilirsin.</p></details>
+        <details><summary>Verilerim güvende mi?<i aria-hidden="true"></i></summary><p>KVKK'ya uygun çalışır, verilerini şifreli saklarız ve hesabını dilediğinde silebilirsin.</p></details>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ CTA ═══════════ -->
+  <!-- ═══════════ CTA + İLETİŞİM ═══════════ -->
   <section class="final" id="iletisim">
     <div class="wrap">
       <div class="final-in" data-r>
@@ -256,9 +252,13 @@
         <p>Güvenilir ustalarla dakikalar içinde buluş.</p>
         <div class="stores">
           <a class="store solid" href="app/"><span><small>Hemen</small>Web'de Aç</span></a>
-          <a class="store" href="app/" title="Çok yakında"><svg viewBox="0 0 384 512" width="18" height="22" fill="currentColor" stroke="none"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM255.4 90.4c22.6-27.7 20.6-52.8 19.9-61.9-22.6 1.3-48.7 15.4-63.6 32.8-16.4 18.9-26 42.2-24 66.9 24.5 1.9 46.8-10.6 67.7-37.8z"/></svg><span><small>Çok yakında</small>App Store</span></a>
-          <a class="store" href="app/" title="Çok yakında"><svg viewBox="0 0 512 512" width="20" height="20" fill="currentColor" stroke="none"><path d="M48 59.5v393c0 5.4 6.4 8.2 10.4 4.6l219.9-197L58.4 54.9C54.4 51.3 48 54.1 48 59.5zm297 141.3l-53.9-30.9-64.2 57.5 64.2 57.5 54-30.9c15.6-8.9 15.6-44.3-.1-53.2zM306.5 159L94.1 37.8l178.2 159.7L306.5 159zM272.3 314.5L94.1 474.2 306.5 353l-34.2-38.5z"/></svg><span><small>Çok yakında</small>Google Play</span></a>
+          <a class="store" href="app/" title="Çok yakında"><svg viewBox="0 0 384 512" width="18" height="22" fill="currentColor" stroke="none" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM255.4 90.4c22.6-27.7 20.6-52.8 19.9-61.9-22.6 1.3-48.7 15.4-63.6 32.8-16.4 18.9-26 42.2-24 66.9 24.5 1.9 46.8-10.6 67.7-37.8z"/></svg><span><small>Çok yakında</small>App Store</span></a>
+          <a class="store" href="app/" title="Çok yakında"><svg viewBox="0 0 512 512" width="20" height="20" fill="currentColor" stroke="none" aria-hidden="true"><path d="M48 59.5v393c0 5.4 6.4 8.2 10.4 4.6l219.9-197L58.4 54.9C54.4 51.3 48 54.1 48 59.5zm297 141.3l-53.9-30.9-64.2 57.5 64.2 57.5 54-30.9c15.6-8.9 15.6-44.3-.1-53.2zM306.5 159L94.1 37.8l178.2 159.7L306.5 159zM272.3 314.5L94.1 474.2 306.5 353l-34.2-38.5z"/></svg><span><small>Çok yakında</small>Google Play</span></a>
         </div>
+        <p class="final-contact">
+          Soru ve destek: <a href="mailto:destek@ustag.app">destek@ustag.app</a><br />
+          KVKK başvuruları: <a href="mailto:kvkk@ustag.app">kvkk@ustag.app</a>
+        </p>
       </div>
     </div>
   </section>
@@ -267,19 +267,19 @@
 <footer class="foot">
   <div class="wrap foot-in">
     <div class="foot-brand">
-      <a class="brand" href="#top"><img src="assets/img/usto-icon.png" alt="" width="34" height="34" /><span>USTAG</span></a>
+      <a class="brand" href="#top"><img src="assets/favicon.svg" alt="" width="34" height="34" /><span>USTAG</span></a>
       <p>İşini ustasına bırak.</p>
     </div>
-    <div><h5>Ürün</h5><a href="#nasil">Nasıl Çalışır?</a><a href="#hizmetler">Hizmetler</a><a href="#ustalar">Ustalar</a><a href="app/">Uygulama</a></div>
-    <div><h5>Şirket</h5><a href="#">Hakkımızda</a><a href="#iletisim">İletişim</a><a href="#">Blog</a></div>
-    <div><h5>Yasal</h5><a href="legal/privacy.html">Gizlilik</a><a href="legal/terms.html">Şartlar</a><a href="legal/kvkk.html">KVKK</a><a href="legal/cookie.html">Çerez</a></div>
+    <div><h2>Ürün</h2><a href="#nasil">Nasıl Çalışır?</a><a href="#hizmetler">Hizmetler</a><a href="#ustalar">Ustalar</a><a href="app/">Uygulama</a></div>
+    <div><h2>İletişim</h2><a href="#iletisim">İletişim bilgileri</a><a href="mailto:destek@ustag.app">destek@ustag.app</a></div>
+    <div><h2>Yasal</h2><a href="legal/privacy.html">Gizlilik</a><a href="legal/terms.html">Şartlar</a><a href="legal/kvkk.html">KVKK</a><a href="legal/cookie.html">Çerez</a></div>
   </div>
   <div class="wrap foot-b"><span>© 2026 USTAG</span><span>Türkiye'de tasarlandı</span></div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="scripts/site.js?v=8" defer></script>
+<script src="vendor/lenis-1.1.13.min.js" defer></script>
+<script src="vendor/gsap-3.12.5.min.js" defer></script>
+<script src="vendor/ScrollTrigger-3.12.5.min.js" defer></script>
+<script src="scripts/site.js?v=9" defer></script>
 </body>
 </html>
