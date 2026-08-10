@@ -18,10 +18,15 @@
   --warning-bg: #FEF3C7;
   --danger: #EF4444;
 
-  /* Kategori aksanları */
+  /* Kategori aksanları — arka plan tonları canlı /categories yanıtındaki
+     accent_bg değerleriyle birebir aynı; ön plan tonu beyaz üzerinde en az
+     4.5:1 olacak şekilde koyulaştırıldı (.svc-n küçük punto metin kullanıyor). */
   --cat-boya: #2563EB;      --cat-boya-bg: #EFF6FF;
   --cat-elektrik: #16A34A;  --cat-elektrik-bg: #DCFCE7;
   --cat-montaj: #F59E0B;    --cat-montaj-bg: #FEF3C7;
+  --cat-tesisat: #0369A1;   --cat-tesisat-bg: #E0F2FE;
+  --cat-tadilat: #7C3AED;   --cat-tadilat-bg: #F3E8FF;
+  --cat-temizlik: #0F766E;  --cat-temizlik-bg: #CCFBF1;
 
   /* Tipografi */
   --font-head: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;

@@ -291,7 +291,8 @@ html.js-r [data-r].in{opacity:1;transform:none}
   .steps{grid-template-columns:1fr}
   .sart{display:none}
   .pro-copy{max-width:64%}
-  .svc-grid{grid-template-columns:1fr}
+  /* 6 kategori tek sütunda çok uzun bir şerit oluyordu → tablette 2 sütun */
+  .svc-grid{grid-template-columns:1fr 1fr}
   .foot-in{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){
@@ -306,6 +307,7 @@ html.js-r [data-r].in{opacity:1;transform:none}
   .fcard .fi{width:30px;height:30px;margin-bottom:5px}
   .fcard b.big{font-size:1.05rem}.fcard b{font-size:.78rem}.fcard em{font-size:.66rem}
   .fc1{top:0;left:-4%}.fc2{top:44%;left:-5%}.fc3{bottom:8%;right:-4%}
+  .svc-grid{grid-template-columns:1fr}
   .stat{gap:9px;padding:6px 4px}.sti{width:32px;height:32px}.sti svg{width:21px;height:21px}
   .pro-copy{max-width:100%;padding:26px}
   .pro-img{display:none}

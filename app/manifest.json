@@ -1,11 +1,11 @@
 {
-    "name": "usto",
-    "short_name": "usto",
+    "name": "USTAG — İşini ustasına bırak",
+    "short_name": "USTAG",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#2563EB",
     "theme_color": "#2563EB",
-    "description": "A new Flutter project.",
+    "description": "Türkiye’nin çift taraflı usta ve müşteri pazar yeri: iş ilanı ver, teklifleri karşılaştır, kimliği doğrulanmış ustayla anlaş.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
